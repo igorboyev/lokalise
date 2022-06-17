@@ -1,0 +1,45 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.integration {
+  padding: 160px 0;
+
+  background-color: $color-white;
+
+  @include lg {
+    padding: 100px 0;
+  }
+}
+
+.integration-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: $gap;
+
+  &__title {
+    max-width: 560px;
+  }
+
+  &__description {
+    max-width: 540px;
+
+    text-align: center;
+
+    font-size: 25px;
+    line-height: 1.2;
+
+    @include xl-lg {
+      font-size: 20px;
+    }
+    @include lg {
+      font-size: 15px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}

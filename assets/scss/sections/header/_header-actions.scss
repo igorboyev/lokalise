@@ -1,0 +1,9 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: $gap-sm;
+}

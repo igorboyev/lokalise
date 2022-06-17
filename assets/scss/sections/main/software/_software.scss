@@ -1,0 +1,60 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.software {
+  padding: 70px 0;
+
+  background-color: $color-bg-warm;
+}
+
+.software-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+  @include lg {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include sm {
+    gap: 30px;
+  }
+
+  &__title {
+    max-width: 455px;
+    padding: 30px;
+
+    @include lg {
+      max-width: 340px;
+    }
+  }
+
+  &__image {
+    order: -1;
+  }
+
+  &__line {
+    width: 1px;
+    height: 168px;
+
+    background-color: $color-black;
+
+    @include lg {
+      width: 100%;
+      height: 1px;
+    }
+  }
+
+  &__logo-g {
+    @include lg {
+      padding: 30px;
+    }
+  }
+
+  &__logo-capterra {
+    @include lg {
+      padding: 30px;
+    }
+  }
+}

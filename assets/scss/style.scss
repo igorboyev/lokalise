@@ -1,0 +1,39 @@
+@use "../../../node_modules/normalize.css/normalize";
+
+@use "mixins/mixins-media";
+
+@use "common/fonts";
+@use "common/typography";
+@use "common/classes";
+
+@use "sections/header/header";
+@use "sections/header/header-menu";
+@use "sections/header/header-logo";
+@use "sections/header/header-navbar";
+@use "sections/header/header-actions";
+@use "sections/header/header-content";
+
+@use "sections/main/main";
+
+@use "sections/main/brands/brands";
+@use "sections/main/job/control";
+@use "sections/main/job/time";
+@use "sections/main/job/quality";
+@use "sections/main/job/work";
+
+@use "sections/main/opportunities/opportunities";
+@use "sections/main/opportunities/opportunity-item";
+
+@use "sections/main/boosting/boosting";
+@use "sections/main/boosting/boosting-content";
+
+@use "sections/main/revolut/revolut-content";
+
+@use "sections/main/software/software";
+
+@use "sections/main/integration/integration";
+
+@use "sections/main/localization/localization";
+
+@use "sections/footer/footer-navbar";
+@use "sections/footer/footer-underline";

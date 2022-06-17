@@ -1,0 +1,35 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.localization {
+  padding: 125px 0 160px;
+
+  background-color: $color-bg-accent;
+}
+
+.localization-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    max-width: 700px;
+    padding-bottom: 30px;
+
+    @include xl-lg {
+      max-width: 560px;
+    }
+    @include lg {
+      max-width: 420px;
+    }
+  }
+
+  &__description {
+    padding-bottom: 60px;
+
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}

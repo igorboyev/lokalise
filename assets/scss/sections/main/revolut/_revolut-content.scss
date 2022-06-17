@@ -1,0 +1,60 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.revolut {
+  background-color: $color-bg-cold;
+}
+
+.revolut-content {
+  display: grid;
+
+  padding-top: 50px;
+  padding-bottom: $gap * 4;
+
+  column-gap: 125px;
+  grid-template-areas: "rvw pho" "rvr pho" "log pho";
+  grid-template-columns: 3fr 1fr;
+  @include xl-md {
+    align-items: center;
+  }
+  @include md-xs {
+    text-align: center;
+
+    grid-template-areas: "rvw" "pho" "rvr" "log";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 10px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+  }
+  &__review {
+    margin-top: $gap-sm;
+    margin-bottom: 23px;
+
+    font-size: 30px;
+    line-height: 1.33;
+  }
+  &__reviewer {
+    display: flex;
+
+    padding: 15px 0;
+
+    line-height: 1.67px;
+
+    grid-area: rvr;
+  }
+
+  &__logo {
+    width: max-content;
+
+    grid-area: log;
+  }
+
+  &__photo {
+    grid-area: pho;
+  }
+}
